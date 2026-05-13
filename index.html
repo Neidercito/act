@@ -1,94 +1,138 @@
 <form action="#" method="post">
  <fieldset>
- <legend>Datos personales</legend>
- <label for="nombre">Nombres y apellidos:</label>
+ <legend>Información del participante</legend>
+
+ <label for="nombre">Nombre completo:</label>
  <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80">
+
  <br><br>
- <label for="correo">Correo electrónico:</label>
- <input type="email" id="correo" name="correo" required
-placeholder="ejemplo@correo.com">
+
+ <label for="correo">Email de contacto:</label>
+ <input type="email" id="correo" name="correo" required placeholder="usuario@correo.com">
+
  <br><br>
- <label for="telefono">Teléfono:</label>
- <input type="tel" id="telefono" name="telefono" placeholder="0999999999" pattern="[0-9]
-{10}">
+
+ <label for="telefono">Número celular:</label>
+ <input type="tel" id="telefono" name="telefono" placeholder="0987654321" pattern="[0-9]{10}">
+
  <br><br>
- <label for="edad">Edad:</label>
+
+ <label for="edad">Años cumplidos:</label>
  <input type="number" id="edad" name="edad" min="15" max="80" required>
+
  <br><br>
- <label for="fecha">Fecha de nacimiento:</label>
+
+ <label for="fecha">Día de nacimiento:</label>
  <input type="date" id="fecha" name="fecha">
  </fieldset>
+
  <br>
+
  <fieldset>
- <legend>Datos académicos</legend>
- <label for="carrera">Carrera o curso:</label>
+ <legend>Formación educativa</legend>
+
+ <label for="carrera">Programa o asignatura:</label>
  <input type="text" id="carrera" name="carrera" required>
+
  <br><br>
- <label for="nivel">Nivel académico:</label>
+
+ <label for="nivel">Grado de formación:</label>
  <select id="nivel" name="nivel" required>
- <option value="">Seleccione una opción</option>
- <option value="bachillerato">Bachillerato</option>
- <option value="tecnologico">Tecnológico</option>
- <option value="universitario">Universitario</option>
+ <option value="">Elija una alternativa</option>
+ <option value="bachillerato">Secundaria</option>
+ <option value="tecnologico">Nivel técnico</option>
+ <option value="universitario">Educación superior</option>
  </select>
+
  <br><br>
- <label for="institucion">Institución educativa:</label>
+
+ <label for="institucion">Centro de estudios:</label>
  <input type="text" id="institucion" name="institucion">
  </fieldset>
+
  <br>
+
  <fieldset>
- <legend>Preferencias del taller</legend>
- <p>Modalidad:</p>
+ <legend>Preferencias de capacitación</legend>
+
+ <p>Tipo de asistencia:</p>
+
  <input type="radio" id="presencial" name="modalidad" value="presencial" required>
- <label for="presencial">Presencial</label>
+ <label for="presencial">En aula</label>
+
  <input type="radio" id="virtual" name="modalidad" value="virtual">
- <label for="virtual">Virtual</label>
+ <label for="virtual">En línea</label>
+
  <input type="radio" id="hibrida" name="modalidad" value="hibrida">
- <label for="hibrida">Híbrida</label>
- <p>Temas de interés:</p>
+ <label for="hibrida">Combinada</label>
+
+ <p>Áreas que desea aprender:</p>
+
  <input type="checkbox" id="html" name="temas" value="html">
- <label for="html">HTML</label>
+ <label for="html">Estructura web</label>
+
  <input type="checkbox" id="css" name="temas" value="css">
- <label for="css">CSS</label>
+ <label for="css">Diseño visual</label>
+
  <input type="checkbox" id="js" name="temas" value="javascript">
- <label for="js">JavaScript</label>
+ <label for="js">Programación web</label>
+
  <br><br>
- <label for="color">Color favorito:</label>
+
+ <label for="color">Tono preferido:</label>
  <input type="color" id="color" name="color">
+
  <br><br>
- <label for="motivacion">Nivel de motivación:</label>
+
+ <label for="motivacion">Grado de entusiasmo:</label>
  <input type="range" id="motivacion" name="motivacion" min="1" max="10">
  </fieldset>
+
  <br>
+
  <fieldset>
- <legend>Disponibilidad</legend>
- <label for="fecha_inicio">Fecha preferida:</label>
+ <legend>Horario disponible</legend>
+
+ <label for="fecha_inicio">Día sugerido:</label>
  <input type="date" id="fecha_inicio" name="fecha_inicio">
+
  <br><br>
- <label for="hora">Hora disponible:</label>
+
+ <label for="hora">Hora sugerida:</label>
  <input type="time" id="hora" name="hora">
+
  <br><br>
- <label for="jornada">Jornada preferida:</label>
+
+ <label for="jornada">Horario preferido:</label>
  <select id="jornada" name="jornada">
- <option value="manana">Mañana</option>
- <option value="tarde">Tarde</option>
- <option value="noche">Noche</option>
+ <option value="manana">Primer horario</option>
+ <option value="tarde">Segundo horario</option>
+ <option value="noche">Tercer horario</option>
  </select>
  </fieldset>
+
  <br>
+
  <fieldset>
- <legend>Información adicional</legend>
- <label for="archivo">Subir archivo de ejemplo:</label>
+ <legend>Datos complementarios</legend>
+
+ <label for="archivo">Adjuntar documento:</label>
  <input type="file" id="archivo" name="archivo">
+
  <br><br>
- <label for="portafolio">Portafolio o perfil:</label>
- <input type="url" id="portafolio" name="portafolio" placeholder="https://ejemplo.com">
+
+ <label for="portafolio">Sitio web o perfil personal:</label>
+ <input type="url" id="portafolio" name="portafolio" placeholder="https://misitio.com">
+
  <br><br>
- <label for="comentarios">Comentarios adicionales:</label>
+
+ <label for="comentarios">Observaciones:</label>
  <br>
  <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
  </fieldset>
+
  <br>
- <button type="submit">Enviar inscripción</button>
- <button type="reset">Limpiar formulario</button>
+
+ <button type="submit">Registrar datos</button>
+ <button type="reset">Borrar información</button>
 </form>
